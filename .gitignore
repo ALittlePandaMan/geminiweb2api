@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+
+.env.docker
+cookies.json
+docker-data/
+
+.vscode/
+.claude/
+.codex
+.docs/

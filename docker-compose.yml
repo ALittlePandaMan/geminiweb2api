@@ -1,0 +1,12 @@
+services:
+  gemini-gateway:
+    build: .
+    container_name: gemini-gateway
+    env_file:
+      - .env.docker
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./cookies.json:/app/cookies/cookies.json
+      - ./docker-data:/app/docker-data
+    restart: unless-stopped
